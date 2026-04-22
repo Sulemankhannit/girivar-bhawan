@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Check leave form validation and dates
   const leaveForm = document.getElementById('leaveForm');
   if (leaveForm) {
     const outDateInput = document.getElementById('outDate');
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  // mock login check
   const loginForm = document.getElementById('loginForm');
   if (loginForm) {
     loginForm.addEventListener('submit', (e) => {
