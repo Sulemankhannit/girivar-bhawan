@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | NIT Kurukshetra Hostel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <div class="logo-section">
+        <div class="logo-text">
+          <span class="logo-title">NIT KURUKSHETRA</span>
+          <span class="logo-subtitle">Girivar Bhawan (Hostel 7)</span>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leave.html">Leave Application</a></li>
+        <li><a href="fees.html">Fee Details</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="btn btn-outline" style="padding: 0.4rem 1rem; margin-top: -0.4rem; border-color: var(--kuru-gold); color: var(--kuru-gold);">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content" style="display: flex; align-items: center; justify-content: center;">
+    <div class="card login-container">
+      <h2 style="text-align: center; color: var(--nitk-navy); margin-bottom: 2rem;">Portal Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label class="form-label" for="userType">Login As</label>
+          <select id="userType" class="form-control" style="appearance: auto;" required>
+            <option value="student">Student</option>
+            <option value="admin">Administrator (Warden)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rollNo">User ID / Roll Number</label>
+          <input type="text" id="rollNo" class="form-control" placeholder="Enter your ID" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; font-size: 0.9rem;">
+          <label style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-main); cursor: pointer;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#" style="color: var(--dharma-saffron); text-decoration: none;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Secure Login</button>
+      </form>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-bottom" style="margin-top: 0; padding-top: 1rem; border-top: none;">
+      <p>&copy; 2026 NIT Kurukshetra Hostel Administration.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

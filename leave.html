@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Application | NIT Kurukshetra</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <div class="logo-section">
+        <div class="logo-text">
+          <span class="logo-title">NIT KURUKSHETRA</span>
+          <span class="logo-subtitle">Girivar Bhawan (Hostel 7)</span>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leave.html">Leave Application</a></li>
+        <li><a href="fees.html">Fee Details</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="btn btn-outline"
+            style="padding: 0.4rem 1rem; margin-top: -0.4rem; border-color: var(--kuru-gold); color: var(--kuru-gold);">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h1 style="color: var(--nitk-navy);">Hostel Leave Application</h1>
+        <p>Please fill out the form meticulously. Authorized leaves are essential for maintaining records and security.
+        </p>
+      </div>
+      <div class="card">
+        <form id="leaveForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="form-group">
+              <label class="form-label" for="studentName">Student Name</label>
+              <input type="text" id="studentName" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="rollNumber">Roll Numberr</label>
+              <input type="text" id="rollNumber" class="form-control" placeholder="e.g. 122XXXX" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="roomNumber">Hostel & Room Number</label>
+              <input type="text" id="roomNumber" class="form-control" placeholder="e.g. H-1, Room 104" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="parentNumber">Parent's/Guardian's Contact Number</label>
+              <input type="tel" id="parentNumber" class="form-control" placeholder="10-digit number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="outDate">Outing Date & Time</label>
+              <input type="datetime-local" id="outDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="returnDate">Expected Return Date & Time</label>
+              <input type="datetime-local" id="returnDate" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group" style="margin-top: 1.5rem;">
+            <label class="form-label" for="leaveReason">Reason for Leave</label>
+            <textarea id="leaveReason" class="form-control" placeholder="Detailed reason for absence..."
+              required></textarea>
+          </div>
+          <div class="form-group" style="margin-top: 1rem;">
+            <label
+              style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--text-main); font-size: 0.9rem;">
+              <input type="checkbox" required>
+              I confirm that my parents/guardians are aware of this leave, and the information provided is accurate.
+            </label>
+          </div>
+          <div style="text-align: right; margin-top: 2rem;">
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-bottom" style="margin-top: 0; padding-top: 1rem; border-top: none;">
+      <p>&copy; 2026 NIT Kurukshetra Hostel Administration.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | NIT Kurukshetra</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid var(--border-light);
+    }
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <div class="logo-section">
+        <div class="logo-text">
+          <span class="logo-title">NIT KURUKSHETRA</span>
+          <span class="logo-subtitle">Girivar Bhawan (Hostel 7)</span>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leave.html">Leave Application</a></li>
+        <li><a href="fees.html">Fee Details</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="btn btn-outline" style="padding: 0.4rem 1rem; margin-top: -0.4rem; border-color: var(--kuru-gold); color: var(--kuru-gold);">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <h1 style="color: var(--nitk-navy);">Contact & Location</h1>
+      <p>Get in touch with the hostel administration for any queries or emergencies.</p>
+    </div>
+    <div class="card contact-grid">
+      <div>
+        <h2 style="color: var(--dharma-saffron); margin-bottom: 1rem;">Hostel Administration Office</h2>
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.1rem; color: var(--dark-clay); margin-bottom: 0.25rem;">Address</h3>
+          <p style="color: var(--text-main);">National Institute of Technology,<br>Kurukshetra - 136119, Haryana, India</p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.1rem; color: var(--dark-clay); margin-bottom: 0.25rem;">Chief Warden (Boys)</h3>
+          <p style="color: var(--text-main);">Email: cwboys@nitkkr.ac.in<br>Phone: +91-1744-233XXX</p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.1rem; color: var(--dark-clay); margin-bottom: 0.25rem;">Chief Warden (Girls)</h3>
+          <p style="color: var(--text-main);">Email: cwgirls@nitkkr.ac.in<br>Phone: +91-1744-233XXX</p>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13783.336056635952!2d76.81232819853907!3d29.9510168925575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e3f422f5244e7%3A0x9c630c311d634966!2sNational%20Institute%20of%20Technology%20(NIT)%2C%20Kurukshetra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-bottom" style="margin-top: 0; padding-top: 1rem; border-top: none;">
+      <p>&copy; 2026 NIT Kurukshetra Hostel Administration.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

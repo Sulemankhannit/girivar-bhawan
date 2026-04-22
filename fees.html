@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Details | NIT Kurukshetra</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Specific styles for fees table */
+    .fees-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .fees-table th, .fees-table td {
+      border: 1px solid var(--border-light);
+      padding: 1rem;
+      text-align: left;
+    }
+    .fees-table th {
+      background-color: var(--nitk-navy);
+      color: var(--white);
+      font-weight: 500;
+      font-family: var(--font-epic);
+    }
+    .fees-table tr:nth-child(even) {
+      background-color: rgba(0,0,0,0.02);
+    }
+    .fees-table td.amount {
+      text-align: right;
+      font-family: monospace;
+      font-size: 1.1rem;
+    }
+    .total-row {
+      font-weight: 700;
+      background-color: rgba(217, 72, 15, 0.1) !important;
+      color: var(--dark-clay);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <div class="logo-section">
+        <div class="logo-text">
+          <span class="logo-title">NIT KURUKSHETRA</span>
+          <span class="logo-subtitle">Girivar Bhawan (Hostel 7)</span>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leave.html">Leave Application</a></li>
+        <li><a href="fees.html">Fee Details</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="btn btn-outline" style="padding: 0.4rem 1rem; margin-top: -0.4rem; border-color: var(--kuru-gold); color: var(--kuru-gold);">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h1 style="color: var(--nitk-navy);">Hostel Fee Structure</h1>
+        <p>Details of hostel and mess charges for the academic session 2026-2027.</p>
+      </div>
+      <div class="card">
+        <h2 style="color: var(--dharma-saffron); font-size: 1.5rem;">B.Tech / MCA (Per Semester)</h2>
+        <table class="fees-table">
+          <thead>
+            <tr>
+              <th>S.No.</th>
+              <th>Particulars</th>
+              <th style="text-align: right;">Amount (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Room Rent (Single/Double Seater)</td>
+              <td class="amount">6,500</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Electricity & Water Charges</td>
+              <td class="amount">3,500</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Hostel Maintenance & Development Fund</td>
+              <td class="amount">2,000</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mess Advance (Adjustable)</td>
+              <td class="amount">20,000</td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="2" style="text-align: right;">Total Amount Payable</td>
+              <td class="amount">32,000</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="background-color: var(--heritage-sand); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--kuru-gold);">
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--dark-clay);">Payment Instructions</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">All payments must be made online via the SBI Collect portal or the official Institute Payment Gateway. Cash or drafts are generally not accepted unless specified by the Chief Warden.</p>
+          <a href="#" class="btn btn-primary">Pay Now via SBI Collect</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-bottom" style="margin-top: 0; padding-top: 1rem; border-top: none;">
+      <p>&copy; 2026 NIT Kurukshetra Hostel Administration.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
